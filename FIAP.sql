@@ -8,7 +8,7 @@ BEGIN
     ) LOOP
         EXECUTE IMMEDIATE 'DROP TABLE '
                     || x.table_name
-                    || 'CASCADE CONSTRAINTS';
+                    || ' CASCADE CONSTRAINTS';
                     
         END LOOP;
         
